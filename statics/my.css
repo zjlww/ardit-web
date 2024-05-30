@@ -20,3 +20,8 @@
     border-radius: 10px;
     background-color: #ffffff;
 }
+
+.center-text {
+    text-align: center;
+    vertical-align: middle;
+}

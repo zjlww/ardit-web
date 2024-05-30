@@ -25,6 +25,7 @@ with doc:
     with div(cls="container").add(div(cls="row")):
         with div(cls="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"):
             header(title="Autoregressive Diffusion Transformer for Text-to-Speech Synthesis", sub="")
+            br()
             from abstract import section_abstract
             section_abstract()
             p(
@@ -44,6 +45,7 @@ with doc:
                 cls="lead"
             )
             get_table()
+            p("* please scroll horizontally to explore additional columns in the table.", cls="lead")
 
         with div(cls="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"):
             from inpaint import get_table
@@ -56,6 +58,24 @@ with doc:
                 cls="lead"
             )
             get_table()
+            p("* please scroll horizontally to explore additional columns in the table.", cls="lead")
+        
+        with div(cls="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"):
+            from demo_compare import get_table
+            h3("Prompted Generation (Comparing with Proprietary Systems)")
+            p(
+                """
+                In this section, we compare our system with proprietary systems including NaturalSpeech 2/3, MegaTTS 2, UniAudio, CLaM-TTS, VoiceBox, and VALL-E. The source codes and model weights for these models are not available.
+                The following samples are obtained from their online demo pages. All waveforms are downsampled to 16kHz.
+                """,
+                cls="lead"
+            )
+            p(
+                "1~4 are obtained from ", a("NaturalSpeech 3", href="https://speechresearch.github.io/naturalspeech3/"), " and 5~20 are obtained from ", a("CLaM-TTS", href="https://clam-tts.github.io/"), "'s demo page.",
+                cls="lead"
+            )
+            get_table()
+            p("* please scroll horizontally to explore additional columns in the table.", cls="lead")
 
 with doc.footer:
     script(src="/statics/jquery/jquery-3.7.1.slim.min.js")

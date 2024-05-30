@@ -14,8 +14,8 @@
         <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
           <h2 style="text-align: center">Autoregressive Diffusion Transformer for Text-to-Speech Synthesis<br>
             <small></small>
-          </h2>
-          <h5>Abstract</h5>
+          </h2><br>
+          <h3>Abstract</h3>
           <p class="lead">
         Audio language models have recently emerged as a promising approach for various audio generation tasks, relying on audio tokenizers to encode waveforms into sequences of discrete symbols. Audio tokenization often poses a necessary compromise between code bitrate and reconstruction accuracy. When dealing with low-bitrate audio codes, language models are constrained to process only a subset of the information embedded in the audio, which in turn restricts their generative capabilities. To circumvent these issues, we propose encoding audio as vector sequences in continuous space Rd and autoregressively generating these sequences using a decoder-only diffusion transformer (ARDiT). Our findings indicate that ARDiT excels in zero-shot text-to-speech and exhibits performance that compares to or even surpasses that of state-of-the-art models. High-bitrate continuous speech representation enables almost flawless reconstruction, allowing our model to achieve nearly perfect speech editing. Our experiments reveal that employing Integral Kullback-Leibler (IKL) divergence for distillation at each autoregressive step significantly boosts the perceived quality of the samples. Simultaneously, it condenses the iterative sampling process of the diffusion model into a single step. Furthermore, ARDiT can be trained to predict several continuous vectors in one step, significantly reducing latency during sampling. Impressively, one of our models can generate 170 ms of 24 kHz speech per evaluation step with minimal degradation in performance.
         </p>
@@ -30,7 +30,7 @@
                 All speakers are unseen for all systems during training.
                 </p>
           <div class="table-responsive" style="overflow-x: scroll">
-            <table class="table table-striped table-sm">
+            <table class="table table-sm">
               <thead>
                 <tr>
                   <th scope="col">#</th>
@@ -1256,6 +1256,7 @@
               </tbody>
             </table>
           </div>
+          <p class="lead">* please scroll horizontally to explore additional columns in the table.</p>
         </div>
         <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
           <h3>Speech Inpainting</h3>
@@ -1264,7 +1265,7 @@
                 All speakers are unseen for all systems during training.
                 </p>
           <div class="table-responsive" style="overflow-x: scroll">
-            <table class="table table-striped table-sm">
+            <table class="table table-sm">
               <thead>
                 <tr>
                   <th scope="col">#</th>
@@ -2038,6 +2039,807 @@
               </tbody>
             </table>
           </div>
+          <p class="lead">* please scroll horizontally to explore additional columns in the table.</p>
+        </div>
+        <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+          <h3>Prompted Generation (Comparing with Proprietary Systems)</h3>
+          <p class="lead">
+                In this section, we compare our system with proprietary systems including NaturalSpeech 2/3, MegaTTS 2, UniAudio, CLaM-TTS, VoiceBox, and VALL-E. The source codes and model weights for these models are not available.
+                The following samples are obtained from their online demo pages. All waveforms are downsampled to 16kHz.
+                </p>
+          <p class="lead">1~4 are obtained from 
+            <a href="https://speechresearch.github.io/naturalspeech3/">NaturalSpeech 3</a> and 5~20 are obtained from 
+            <a href="https://clam-tts.github.io/">CLaM-TTS</a>'s demo page.
+          </p>
+          <div class="table-responsive" style="overflow-x: scroll">
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">1</th>
+                  <th scope="col">2</th>
+                  <th scope="col">3</th>
+                  <th scope="col">4</th>
+                  <th scope="col">5</th>
+                  <th scope="col">6</th>
+                  <th scope="col">7</th>
+                  <th scope="col">8</th>
+                  <th scope="col">9</th>
+                  <th scope="col">10</th>
+                  <th scope="col">11</th>
+                  <th scope="col">12</th>
+                  <th scope="col">13</th>
+                  <th scope="col">14</th>
+                  <th scope="col">15</th>
+                  <th scope="col">16</th>
+                  <th scope="col">17</th>
+                  <th scope="col">18</th>
+                  <th scope="col">19</th>
+                  <th scope="col">20</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">Text</th>
+                  <td>
+                    <p>It is this that is of interest to theory of knowledge.</p>
+                  </td>
+                  <td>
+                    <p>For, like as not, they must have thought him a prince when they saw his fine cap.</p>
+                  </td>
+                  <td>
+                    <p>What you had best do, my child, is to keep it and pray to it that since it was a witness to your undoing, it will deign to vindicate your cause by its righteous judgment.</p>
+                  </td>
+                  <td>
+                    <p>The strong position held by the Edison system under the strenuous competition that was already springing up was enormously improved by the introduction of the three wire system and it gave an immediate impetus to incandescent lighting.</p>
+                  </td>
+                  <td>
+                    <p>They moved thereafter cautiously about the hut groping before and about them to find something to show that Warrenton had fulfilled his mission.</p>
+                  </td>
+                  <td>
+                    <p>And lay me down in thy cold bed and leave my shining lot.</p>
+                  </td>
+                  <td>
+                    <p>Number ten, fresh nelly is waiting on you, good night husband.</p>
+                  </td>
+                  <td>
+                    <p>Yea, his honourable worship is within, but he hath a godly minister or two with him, and likewise a leech.</p>
+                  </td>
+                  <td>
+                    <p>Instead of shoes, the old man wore boots with turnover tops, and his blue coat had wide cuffs of gold braid.</p>
+                  </td>
+                  <td>
+                    <p>The army found the people in poverty and left them in comparative wealth.</p>
+                  </td>
+                  <td>
+                    <p>Thus did this humane and right minded father comfort his unhappy daughter, and her mother embracing her again, did all she could to soothe her feelings.</p>
+                  </td>
+                  <td>
+                    <p>He was in deep converse with the clerk and entered the hall holding him by the arm.</p>
+                  </td>
+                  <td>
+                    <p>Indeed, there were only one or two strangers who could be admitted among the sisters without producing the same result.</p>
+                  </td>
+                  <td>
+                    <p>For if he's anywhere on the farm, we can send for him in a minute.</p>
+                  </td>
+                  <td>
+                    <p>Their piety would be like their names, like their faces, like their clothes, and it was idle for him to tell himself that their humble and contrite hearts it might be paid a far-richer tribute of devotion than his had ever been. A gift tenfold more acceptable than his elaborate adoration.</p>
+                  </td>
+                  <td>
+                    <p>The air and the earth are curiously mated and intermingled as if the one were the breath of the other.</p>
+                  </td>
+                  <td>
+                    <p>I had always known him to be restless in his manner, but on this particular occasion he was in such a state of uncontrollable agitation that it was clear something very unusual had occurred.</p>
+                  </td>
+                  <td>
+                    <p>His death in this conjuncture was a public misfortune.</p>
+                  </td>
+                  <td>
+                    <p>It is this that is of interest to theory of knowledge.</p>
+                  </td>
+                  <td>
+                    <p>For a few miles, she followed the line hitherto presumably occupied by the coast of Algeria, but no land appeared to the south.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">Prompt</th>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/1.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/2.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/3.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/4.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/5.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/6.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/7.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/8.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/9.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/10.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/11.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/12.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/13.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/14.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/15.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/16.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/17.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/18.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/19.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/prompt/20.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">ARDiT (DMD, B=1)</th>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/1.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/2.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/3.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/4.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/5.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/6.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/7.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/8.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/9.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/10.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/11.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/12.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/13.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/14.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/15.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/16.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/17.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/18.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/19.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ardit_dmd_b1/20.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">NaturalSpeech 3</th>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns3/1.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns3/2.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns3/3.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns3/4.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">NaturalSpeech 2</th>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns2/1.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns2/2.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns2/3.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns2/4.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns2/7.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td class="center-text">—</td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns2/9.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns2/10.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns2/11.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td class="center-text">—</td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns2/13.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns2/14.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns2/15.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns2/16.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns2/17.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns2/18.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns2/19.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/ns2/20.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">MegaTTS 2</th>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/megatts2/1.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/megatts2/2.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/megatts2/3.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/megatts2/4.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">UniAudio</th>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/uniaudio/1.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/uniaudio/2.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/uniaudio/3.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/uniaudio/4.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">CLaM-TTS</th>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/clamtts/5.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/clamtts/6.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/clamtts/7.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/clamtts/8.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/clamtts/9.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/clamtts/10.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/clamtts/11.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/clamtts/12.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/clamtts/13.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/clamtts/14.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/clamtts/15.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/clamtts/16.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/clamtts/17.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/clamtts/18.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/clamtts/19.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/clamtts/20.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">VoiceBox</th>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/voicebox/1.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/voicebox/2.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/voicebox/3.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/voicebox/4.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">VALL-E</th>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/valle/5.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/valle/6.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/valle/7.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/valle/8.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/valle/9.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/valle/10.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/valle/11.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/valle/12.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">Ground Truth</th>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/1.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/2.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/3.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/4.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/5.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/6.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/7.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/8.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/9.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/10.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/11.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/12.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/13.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/14.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/15.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/16.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/17.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/18.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/19.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/demo_compare/gt/20.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="lead">* please scroll horizontally to explore additional columns in the table.</p>
         </div>
       </div>
     </div>

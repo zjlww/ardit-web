@@ -44,7 +44,7 @@ def get_table(
     root: str = "/samples/prompt",
     control_width_px = 240,
 ) -> html_tag:
-    _div = div(cls="table-responsive", style="overflow-x: scroll").add(table(cls="table table-striped table-sm"))
+    _div = div(cls="table-responsive", style="overflow-x: scroll").add(table(cls="table table-sm"))
     with _div:
         with thead():
             with tr():
