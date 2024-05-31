@@ -49,11 +49,12 @@ with doc:
 
         with div(cls="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"):
             from inpaint import get_table
-            h3("Speech Inpainting")
+            h3("Speech Editing")
             p(
                 """
-                In this task, we evaluate on test set C. We mask fragments of the waveforms, and ask the models to generate the full waveforms. The masked sections are highlighted within the text.
-                All speakers are unseen for all systems during training.
+                We evaluated the performance of text-based speech editing on the speech inpainting task.
+                The models generate complete waveforms given complete texts and partially masked waveforms. The masked sections are highlighted within the text.
+                All speakers were unseen by all systems during training. The following 20 test cases are from test set C (long).
                 """,
                 cls="lead"
             )
@@ -67,6 +68,7 @@ with doc:
                 """
                 In this section, we compare our system with proprietary systems including NaturalSpeech 2/3, MegaTTS 2, UniAudio, CLaM-TTS, VoiceBox, and VALL-E. The source codes and model weights for these models are not available.
                 The following samples are obtained from their online demo pages. All waveforms are downsampled to 16kHz.
+                Please note that ARDiT's performance is influenced by the fact that the prompt waveforms are in 16kHz, not 24kHz, and the prompt texts are not semantically coherent with the target texts.
                 """,
                 cls="lead"
             )
