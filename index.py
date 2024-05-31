@@ -79,6 +79,22 @@ with doc:
             get_table()
             p("* please scroll horizontally to explore additional columns in the table.", cls="lead")
 
+        with div(cls="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"):
+            from celeb import get_table
+            h3("Prompted Generation (Celebrities and Game Characters)")
+            p(
+                """
+                ARDiT trained only on LibriTTS is capable of imitating famous figures' voice.
+                """,
+                cls="lead"
+            )
+            p(
+                "Prompts and baseline results are obtained from ", a("Mega-TTS", href="https://mega-tts.github.io/demo-page/"), " and ", a("CLaM-TTS", href="https://clam-tts.github.io/"), "'s demo pages.",
+                cls="lead"
+            )
+            get_table()
+            p("* please scroll horizontally to explore additional columns in the table.", cls="lead")
+
 with doc.footer:
     script(src="/statics/jquery/jquery-3.7.1.slim.min.js")
     script(src="/statics/bootstrap-5.2.3-dist/bootstrap.min.js")

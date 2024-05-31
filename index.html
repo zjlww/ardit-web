@@ -2843,6 +2843,243 @@
           </div>
           <p class="lead">* please scroll horizontally to explore additional columns in the table.</p>
         </div>
+        <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+          <h3>Prompted Generation (Celebrities and Game Characters)</h3>
+          <p class="lead">
+                ARDiT trained only on LibriTTS is capable of imitating famous figures' voice.
+                </p>
+          <p class="lead">Prompts and baseline results are obtained from 
+            <a href="https://mega-tts.github.io/demo-page/">Mega-TTS</a> and 
+            <a href="https://clam-tts.github.io/">CLaM-TTS</a>'s demo pages.
+          </p>
+          <div class="table-responsive" style="overflow-x: scroll">
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Michael Caine</th>
+                  <th scope="col">Jessie Eisenberg</th>
+                  <th scope="col">Optimus Prime</th>
+                  <th scope="col">Rachel McAdams</th>
+                  <th scope="col">Robert Downey Jr.</th>
+                  <th scope="col">Benedict Cumberbatch</th>
+                  <th scope="col">Mark Zuckerberg</th>
+                  <th scope="col">Dwarf from Warcraft</th>
+                  <th scope="col">Barack Obama</th>
+                  <th scope="col">Theresa May</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">Text</th>
+                  <td>
+                    <p>And sometimes, in both realms, it's not just about shining the brightest, but enduring the longest.</p>
+                  </td>
+                  <td>
+                    <p>So here we are, trying to catch up, and hoping this day turns around soon.</p>
+                  </td>
+                  <td>
+                    <p>We must unite and harness our strengths, for the fate of our world hangs in the balance.</p>
+                  </td>
+                  <td>
+                    <p>But to those who knew her well, it was a symbol of her unwavering determination and spirit.</p>
+                  </td>
+                  <td>
+                    <p>We have the responsibility to ensure power and technology are used for the greater good.</p>
+                  </td>
+                  <td>
+                    <p>However, if you choose to stay, know that the truth I unveil may forever alter the course of your journey.</p>
+                  </td>
+                  <td>
+                    <p>Our goal is to bridge communication gaps and preserve the richness of these unique languages.</p>
+                  </td>
+                  <td>
+                    <p>Good afternoon everyone. Today, we are super excited to introduce you all to Introduction to Deep Learning, the course of Carnegie Mellon University.</p>
+                  </td>
+                  <td>
+                    <p>Good afternoon everyone. Today, we are super excited to introduce you all to Introduction to Deep Learning, the course of Carnegie Mellon University.</p>
+                  </td>
+                  <td>
+                    <p>Good afternoon everyone. Today, we are super excited to introduce you all to Introduction to Deep Learning, the course of Carnegie Mellon University.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">Prompt</th>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/prompt/caine.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/prompt/jessie.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/prompt/optimusprime.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/prompt/rachel.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/prompt/robert.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/prompt/sherlock.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/prompt/zuck.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/prompt/dwarf.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/prompt/obama.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/prompt/may.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">ARDiT (DMD, B=1)</th>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/ardit_dmd_b1/caine.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/ardit_dmd_b1/jessie.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/ardit_dmd_b1/optimusprime.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/ardit_dmd_b1/rachel.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/ardit_dmd_b1/robert.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/ardit_dmd_b1/sherlock.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/ardit_dmd_b1/zuck.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/ardit_dmd_b1/dwarf.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/ardit_dmd_b1/obama.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/ardit_dmd_b1/may.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">MegaTTS</th>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/megatts/dwarf.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/megatts/obama.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/megatts/may.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" style="position: sticky; left: 0; z-index:10; opacity: 1.0; background-color: white;">CLaM-TTS</th>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/clamtts/caine.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/clamtts/jessie.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/clamtts/optimusprime.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/clamtts/rachel.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/clamtts/robert.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/clamtts/sherlock.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 240px">
+                      <source src="/samples/celeb/clamtts/zuck.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                  <td class="center-text">—</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="lead">* please scroll horizontally to explore additional columns in the table.</p>
+        </div>
       </div>
     </div>
   
