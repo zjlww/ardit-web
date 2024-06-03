@@ -63,7 +63,7 @@ with doc:
         
         with div(cls="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"):
             from demo_compare import get_table
-            h3("Prompted Generation (Comparing with Proprietary Systems)")
+            h3("Prompted Generation (Comparing with Proprietary Systems I)")
             p(
                 """
                 In this section, we compare our system with proprietary systems including NaturalSpeech 2/3, MegaTTS 2, UniAudio, CLaM-TTS, VoiceBox, and VALL-E. The source codes and model weights for these models are not available.
@@ -74,6 +74,24 @@ with doc:
             )
             p(
                 "1~4 are obtained from ", a("NaturalSpeech 3", href="https://speechresearch.github.io/naturalspeech3/"), " and 5~20 are obtained from ", a("CLaM-TTS", href="https://clam-tts.github.io/"), "'s demo page.",
+                cls="lead"
+            )
+            get_table()
+            p("* please scroll horizontally to explore additional columns in the table.", cls="lead")
+
+        with div(cls="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"):
+            from demo_compare_meta import get_table
+            h3("Prompted Generation (Comparing with Proprietary Systems II)")
+            p(
+                """
+                In this section, we compare our system with proprietary Flow Matching based TTS systems including VoiceBox and SpeechFlow. The source codes and model weights for these models are not available.
+                The following samples are obtained from their online demo pages. All waveforms are downsampled to 16kHz.
+                Please note that ARDiT's performance is influenced by the fact that the prompt waveforms are in 16kHz, not 24kHz, and the prompt texts are not semantically coherent with the target texts.
+                """,
+                cls="lead"
+            )
+            p(
+                "Audio samples are obtained from ", a("voicebox.metademolab.com", href="https://voicebox.metademolab.com/"),
                 cls="lead"
             )
             get_table()
