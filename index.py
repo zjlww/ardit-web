@@ -49,7 +49,7 @@ with doc:
 
         with div(cls="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"):
             from inpaint import get_table
-            h3("Speech Editing")
+            h3("Speech Inpainting")
             p(
                 """
                 We evaluated the performance of text-based speech editing on the speech inpainting task.
@@ -112,6 +112,31 @@ with doc:
             )
             get_table()
             p("* please scroll horizontally to explore additional columns in the table.", cls="lead")
+        
+        with div(cls="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"):
+            from edit import get_table
+            h3("Speech Editing")
+            p(
+                """In this section, we compare the speech editing performance of ARDiT with VoiceBox's demo.""",
+                cls="lead"
+            )
+            p(
+                """The following audio samples are obtained from """,
+                a("VoiceCraft's demo page", href="https://jasonppy.github.io/VoiceCraft_web/"),
+                ".",
+                cls="lead"
+            )
+            get_table()
+
+        with div(cls="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"):
+            from rate_control import get_table
+            h3("Speech Rate Control")
+            p(
+                """ARDiT TTS can control the output speech rate to some extent, by controlling the total audio duration.""",
+                cls="lead"
+            )
+            get_table()
+
 
 with doc.footer:
     script(src="/statics/jquery/jquery-3.7.1.slim.min.js")

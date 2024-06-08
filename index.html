@@ -1259,7 +1259,7 @@
           <p class="lead">* please scroll horizontally to explore additional columns in the table.</p>
         </div>
         <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
-          <h3>Speech Editing</h3>
+          <h3>Speech Inpainting</h3>
           <p class="lead">
                 We evaluated the performance of text-based speech editing on the speech inpainting task.
                 The models generate complete waveforms given complete texts and partially masked waveforms. The masked sections are highlighted within the text.
@@ -3453,6 +3453,294 @@
             </table>
           </div>
           <p class="lead">* please scroll horizontally to explore additional columns in the table.</p>
+        </div>
+        <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+          <h3>Speech Editing</h3>
+          <p class="lead">In this section, we compare the speech editing performance of ARDiT with VoiceBox's demo.</p>
+          <p class="lead">The following audio samples are obtained from 
+            <a href="https://jasonppy.github.io/VoiceCraft_web/">VoiceCraft's demo page</a>.
+          </p>
+          <p class="lead"><strong>Text: </strong>Will find himself completely at a loss on <span style="text-decoration-line: underline; text-decoration-style: wavy;">occasions of common and constant recurrence</span> <span style="text-decoration-line: underline;">rare and unpredictable circumstances</span>, speculative ability is one thing and practical ability is another.</p>
+          <div class="table-responsive">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Original</td>
+                  <td>ARDiT (DMD, B=1)</td>
+                  <td>VoiceBox</td>
+                  <td>VoiceCraft</td>
+                </tr>
+                <tr>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/original/3.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/ardit_dmd_b1/3.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/voicebox/3.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/voicecraft/3.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="lead"><strong>Text: </strong>In zero weather, in mid-winter, when <span style="text-decoration-line: underline; text-decoration-style: wavy;">the earth is frozen to a great depth below the surface</span> <span style="text-decoration-line: underline;">jack frost has cast his icy spell upon the land</span>, when in driving over the unpaved country roads, they give forth a hard metallic ring.</p>
+          <div class="table-responsive">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Original</td>
+                  <td>ARDiT (DMD, B=1)</td>
+                  <td>VoiceBox</td>
+                  <td>VoiceCraft</td>
+                </tr>
+                <tr>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/original/0.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/ardit_dmd_b1/0.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/voicebox/0.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/voicecraft/0.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="lead"><strong>Text: </strong>And especially as I am not very much up in latin myself, he said, the suit was on <span style="text-decoration-line: underline; text-decoration-style: wavy;">an insurance policy</span> <span style="text-decoration-line: underline;">a classified treasure map</span> that he was defending on the ground of misinterpretations.</p>
+          <div class="table-responsive">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Original</td>
+                  <td>ARDiT (DMD, B=1)</td>
+                  <td>VoiceBox</td>
+                  <td>VoiceCraft</td>
+                </tr>
+                <tr>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/original/1.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/ardit_dmd_b1/1.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/voicebox/1.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/voicecraft/1.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="lead"><strong>Text: </strong>Yet these petty operations incessantly continued in time surmount the greatest difficulties, <span style="text-decoration-line: underline; text-decoration-style: wavy;">mountains are elevated and oceans bounded</span> <span style="text-decoration-line: underline;">vast challenges emerge and unexplored frontiers beckon</span> by the slender force of human beings.</p>
+          <div class="table-responsive">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Original</td>
+                  <td>ARDiT (DMD, B=1)</td>
+                  <td>VoiceBox</td>
+                  <td>VoiceCraft</td>
+                </tr>
+                <tr>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/original/2.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/ardit_dmd_b1/2.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/voicebox/2.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/voicecraft/2.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="lead"><strong>Text: </strong>And the <span style="text-decoration-line: underline; text-decoration-style: wavy;">carlsruhe</span> <span style="text-decoration-line: underline;">inventive</span> professor had to devise an ingenious apparatus which enabled him to bring the preparation at the required temperature on to the very plate of the microscope.</p>
+          <div class="table-responsive">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Original</td>
+                  <td>ARDiT (DMD, B=1)</td>
+                  <td>VoiceBox</td>
+                  <td>VoiceCraft</td>
+                </tr>
+                <tr>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/original/4.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/ardit_dmd_b1/4.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/voicebox/4.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/voicecraft/4.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="lead"><strong>Text: </strong>This was george steers the son of a british naval captain and ship modeler who had become an american naval officer and was <span style="text-decoration-line: underline; text-decoration-style: wavy;">the first man to take charge of the washington navy yard</span> <span style="text-decoration-line: underline;">entrusted with the prestigious role of overseeing the operations at the renowned naval headquarters</span>.</p>
+          <div class="table-responsive">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Original</td>
+                  <td>ARDiT (DMD, B=1)</td>
+                  <td>VoiceBox</td>
+                  <td>VoiceCraft</td>
+                </tr>
+                <tr>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/original/5.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/ardit_dmd_b1/5.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/voicebox/5.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/edit/voicecraft/5.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+          <h3>Speech Rate Control</h3>
+          <p class="lead">ARDiT TTS can control the output speech rate to some extent, by controlling the total audio duration.</p>
+          <div class="table-responsive">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Prompt</td>
+                </tr>
+                <tr>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/rate_control/prompt.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="lead"><strong>Text: </strong>The examination and testimony of the experts, enabled the commission to conclude, that five shots may have been fired.</p>
+          <div class="table-responsive">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Very Slow</td>
+                  <td>Slow</td>
+                  <td>Normal</td>
+                </tr>
+                <tr>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/rate_control/9s.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/rate_control/8s.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/rate_control/7s.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Normal</td>
+                  <td>Fast</td>
+                  <td>Very Fast</td>
+                </tr>
+                <tr>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/rate_control/6s.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/rate_control/5s.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                  <td>
+                    <audio controls="" preload="none" style="width: 250px">
+                      <source src="/samples/rate_control/4s.wav" type="audio/wav">
+                    </audio>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
