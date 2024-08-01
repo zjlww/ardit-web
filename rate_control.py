@@ -2,7 +2,7 @@ from dominate.tags import *
 from dominate.util import raw
 from templates import audio_table
 
-audio_root = "/samples/rate_control"
+audio_root = "/ardit-web/samples/rate_control"
 
 
 samples = [
@@ -16,6 +16,21 @@ samples = [
 
 
 def get_table():
-    audio_table(["/samples/rate_control/prompt.wav"], audio_names=["Prompt"], cols=1, audio_control_width_px=250)
-    p(raw("<strong>Text: </strong>The examination and testimony of the experts, enabled the commission to conclude, that five shots may have been fired."), cls="lead")
-    audio_table([f for _, f in samples], audio_names=[n for n, _ in samples], cols=3, audio_control_width_px=250)
+    audio_table(
+        ["/ardit-web/samples/rate_control/prompt.wav"],
+        audio_names=["Prompt"],
+        cols=1,
+        audio_control_width_px=250,
+    )
+    p(
+        raw(
+            "<strong>Text: </strong>The examination and testimony of the experts, enabled the commission to conclude, that five shots may have been fired."
+        ),
+        cls="lead",
+    )
+    audio_table(
+        [f for _, f in samples],
+        audio_names=[n for n, _ in samples],
+        cols=3,
+        audio_control_width_px=250,
+    )

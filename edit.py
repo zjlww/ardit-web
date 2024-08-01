@@ -4,7 +4,7 @@ from templates import audio_table
 
 
 system_names = ["Original", "ARDiT (DMD, B=1)", "VoiceBox", "VoiceCraft"]
-systems =      ["original", "ardit_dmd_b1",     "voicebox", "voicecraft"]
+systems = ["original", "ardit_dmd_b1", "voicebox", "voicecraft"]
 
 texts = [
     (
@@ -40,18 +40,23 @@ texts = [
 ]
 
 
-def prettify(a: str, b: str, c:str) -> str:
-    return "<strong>Text: </strong>" + a.replace(b, f"""<span style="text-decoration-line: underline; text-decoration-style: wavy;">{b}</span> <span style="text-decoration-line: underline;">{c}</span>""")
+def prettify(a: str, b: str, c: str) -> str:
+    return "<strong>Text: </strong>" + a.replace(
+        b,
+        f"""<span style="text-decoration-line: underline; text-decoration-style: wavy;">{b}</span> <span style="text-decoration-line: underline;">{c}</span>""",
+    )
 
 
 pretty_texts = [prettify(a, b, c) for a, b, c in texts]
 idxs = [3, 0, 1, 2, 4, 5]
 
 
-def get_table(audio_root="/samples/edit"):
+def get_table(audio_root="/ardit-web/samples/edit"):
     for text, idx in zip(pretty_texts, idxs):
         p(raw(text), cls="lead")
         audio_table(
             audio_files=[f"{audio_root}/{system}/{idx}.wav" for system in systems],
-            audio_names=system_names, cols=4, audio_control_width_px=250,
+            audio_names=system_names,
+            cols=4,
+            audio_control_width_px=250,
         )
